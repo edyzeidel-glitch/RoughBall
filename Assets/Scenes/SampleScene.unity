@@ -294,7 +294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 090599a7b62ae4b20900e2015f97ac37, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 52ee1d23182174b1e84d593b2176f477, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1307,7 +1307,7 @@ GameObject:
   - component: {fileID: 475992821}
   - component: {fileID: 475992822}
   m_Layer: 0
-  m_Name: HUD
+  m_Name: 'Canvas '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2021,7 +2021,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 090599a7b62ae4b20900e2015f97ac37, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 52ee1d23182174b1e84d593b2176f477, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3944,7 +3944,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 090599a7b62ae4b20900e2015f97ac37, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 52ee1d23182174b1e84d593b2176f477, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
