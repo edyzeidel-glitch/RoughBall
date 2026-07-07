@@ -1308,7 +1308,7 @@ GameObject:
   - component: {fileID: 475992821}
   - component: {fileID: 475992822}
   m_Layer: 0
-  m_Name: HUD
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2240,7 +2240,7 @@ MonoBehaviour:
   levelColors:
   - {r: 2.2, g: 0.15, b: 1.3, a: 1}
   - {r: 2.4, g: 1.2, b: 0.1, a: 1}
-  - {r: 0.1, g: 2.2, b: 2, a: 1}
+  - {r: 0, g: 1.5, b: 1.4, a: 1}
   - {r: 1.6, g: 0.2, b: 2.4, a: 1}
   - {r: 2.6, g: 0.15, b: 0.25, a: 1}
   spawnZ: 100
@@ -4326,8 +4326,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "<b>A / D</b> or <b>arrow keys</b>  \u2014  roll around the tube\n\ndodge
-    the paddles. thread the gap.\n\n<color=#33CCFF><b>BLUE ORB</b></color>   +1 heart\n\n<color=#FFD84D><b>GOLD
-    CUBE</b></color>   3s immunity\n\nsurvive 5 levels. reach the portal. <color=#33FF66><b>break
+    the paddles. thread the gap.\n\n<color=#33CCFF><b>BLUE ORB</b></color> +1 heart\n\n<color=#FFD84D><b>GOLD
+    CUBE</b></color> 3s immunity\n\nsurvive 5 levels. reach the portal. <color=#33FF66><b>break
     free.</b></color>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 61f6079d055fc4bb297d046750287962, type: 2}
