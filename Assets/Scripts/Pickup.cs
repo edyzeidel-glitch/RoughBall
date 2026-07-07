@@ -35,7 +35,7 @@ public class Pickup : MonoBehaviour
         {
             hp.Heal(1);
             if (AudioManager.I != null) AudioManager.I.PlayPickup();
-            if (PickupPopup.I != null) PickupPopup.I.Show("+1 HEART!", new Color(1f, 0.3f, 0.45f));
+            if (PickupPopup.I != null) PickupPopup.I.Show("+1 HEART!", new Color(0.2f, 0.8f, 1f));
 
         }
         else
