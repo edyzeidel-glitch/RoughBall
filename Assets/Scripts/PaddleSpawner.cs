@@ -21,6 +21,9 @@ public class PaddleSpawner : MonoBehaviour
     public float baseInterval = 1.9f;
     public float intervalPerLevel = 0.35f; // steeper ramp: mid levels press harder
     public float minInterval = 1.1f;
+    [Header("Intro (Pong-style opening)")]
+    public float introDuration = 20f;     // singles-only warm-up at run start
+    public float introPaddleWidth = 3f;   // narrow Pong-like bars (normal = 4.8)
 
     [Header("Barriers")]
     public float gapBase = 80f;       // gap size in degrees at level 1
@@ -44,6 +47,16 @@ public class PaddleSpawner : MonoBehaviour
         {
             float interval = Mathf.Max(minInterval, baseInterval - intervalPerLevel * (gm.level - 1));
             float barrierChance = barrierChanceBase + barrierChancePerLevel * gm.level;
+
+            // Pong-style intro: only lone narrow paddles at the start of a run
+            if (gm.elapsed < introDuration)
+            {
+                var intro = SpawnPaddle(Random.Range(0f, 360f));
+                Vector3 s = intro.transform.localScale;
+                intro.transform.localScale = new Vector3(introPaddleWidth, s.y, s.z);
+                timer = interval;
+                return;
+            }
 
             if (Random.value < barrierChance)
             {

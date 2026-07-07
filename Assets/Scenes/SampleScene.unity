@@ -1962,6 +1962,8 @@ MonoBehaviour:
   baseInterval: 1.9
   intervalPerLevel: 0.35
   minInterval: 1.1
+  introDuration: 20
+  introPaddleWidth: 4
   gapBase: 80
   gapPerLevel: 13
   gapMin: 38
