@@ -112,12 +112,16 @@ public GameObject SpawnBarrier(float gapCenterDeg, float gapSizeDeg, float rotSp
         }
 
         float covered = 360f - gapSizeDeg;
-        int count = Mathf.CeilToInt(covered / 55f); // paddle covers ~60 deg, slight overlap
-        float gapEnd = gapCenterDeg + gapSizeDeg * 0.5f;
+        float paddleArc = 52f;  // one paddle's visual arc
+        float segGap = 5f;      // slit between paddles — too thin for the ball
+        float step = paddleArc + segGap;
+        int count = Mathf.Max(1, Mathf.FloorToInt((covered + segGap) / step));
+        float used = count * step - segGap;
+        float gapEnd = gapCenterDeg + gapSizeDeg * 0.5f + (covered - used) * 0.5f;
 
         for (int i = 0; i < count; i++)
         {
-            float ang = gapEnd + (i + 0.5f) * covered / count;
+            float ang = gapEnd + paddleArc * 0.5f + i * step;
             float rad = ang * Mathf.Deg2Rad;
             Vector3 radial = new Vector3(Mathf.Cos(rad), Mathf.Sin(rad), 0f);
             var p = Instantiate(paddlePrefab, parent.transform);
