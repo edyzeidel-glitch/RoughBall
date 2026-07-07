@@ -23,3 +23,6 @@
 sysinfo.txt
 *.stackdump
 *.slnx
+
+# Unity crash recovery
+[Aa]ssets/_Recovery*
