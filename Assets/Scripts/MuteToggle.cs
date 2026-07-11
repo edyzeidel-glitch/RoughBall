@@ -8,6 +8,14 @@ public class MuteToggle : MonoBehaviour
 
     private bool muted;
 
+    void Start()
+    {
+        // remember the choice across restarts: read the actual volume state
+        muted = AudioListener.volume < 0.5f;
+        if (label != null) label.text = muted ? "SOUND: OFF" : "SOUND: ON";
+    }
+
+
     public void Toggle()
     {
         muted = !muted;
