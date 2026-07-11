@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager I; // easy global access
 
-    public enum State { Menu, Playing, GameOver, Victory }
+    public enum State { Menu, Playing, GameOver, Victory, Paused }
 
     [Header("State")]
     public State state = State.Menu; // game waits on the start menu
