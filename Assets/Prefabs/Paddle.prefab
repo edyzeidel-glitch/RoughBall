@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5687109216349224708}
   - component: {fileID: 4527374550724396084}
   - component: {fileID: 2200237210923711644}
+  - component: {fileID: 2979320178232202042}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Paddle
@@ -125,3 +126,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf0061cfd2cc74a58af6581d07cee6c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PaddleMover
+--- !u!114 &2979320178232202042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087235303859701949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d72c0ed9a224be6b6a24c2d59391f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PaddleSwing
+  triggerDistance: 12
+  cooldown: 1.5
+  lateralRange: 4.5
+  jabOnly: 1
+  jabAmount: 1.5
+  wallJabBoost: 1
+  windup: 0.25
+  lunge: 0.6
+  windupTime: 0.18
+  lungeTime: 0.1
+  settleTime: 0.25

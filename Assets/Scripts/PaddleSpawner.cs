@@ -128,6 +128,9 @@ public GameObject SpawnBarrier(float gapCenterDeg, float gapSizeDeg, float rotSp
             p.transform.localPosition = radial * paddleRadius;
             p.transform.localRotation = Quaternion.Euler(0f, 0f, ang - 90f);
             Destroy(p.GetComponent<PaddleMover>()); // parent moves the whole wall
+            var sw = p.GetComponent<PaddleSwing>();
+            if (sw != null) sw.jabOnly = true; // segments jab forward only — walls stay sealed
+
             ApplyLevelColor(p);
         }
         return parent;
