@@ -37,7 +37,11 @@ public class PlayerHealth : MonoBehaviour
             return;
         }
 
-        if (invTimer > 0f)
+        // pause freezes the immunity/flash clocks too
+        if (GameManager.I != null && GameManager.I.state == GameManager.State.Paused) return;
+
+        
+if (invTimer > 0f)
         {
             invTimer -= Time.deltaTime;
             // rapid red flash: toggle ~10 times per second
