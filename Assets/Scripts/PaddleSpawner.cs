@@ -63,7 +63,7 @@ public class PaddleSpawner : MonoBehaviour
                 float gap = Mathf.Max(gapMin, gapBase - gapPerLevel * (gm.level - 1));
                 float rot = 0f;
                 if (gm.level >= 3) // rotation starts one level earlier, gently
-                    rot = (Random.value < 0.5f ? -1f : 1f) * (5f + 3f * (gm.level - 3));
+                    rot = (Random.value < 0.5f ? -1f : 1f) * (6f + 4f * (gm.level - 3)); // L3 6, L4 10, L5 14 deg/s
                 SpawnBarrier(Random.Range(0f, 360f), gap, rot);
                 timer = interval * 1.6f; // barriers need more reaction room
             }
@@ -112,7 +112,7 @@ public GameObject SpawnBarrier(float gapCenterDeg, float gapSizeDeg, float rotSp
         }
 
         float covered = 360f - gapSizeDeg;
-        float paddleArc = 52f;  // one paddle's visual arc
+        float paddleArc = 43f;  // one paddle's real visual arc (3.4 wide at radius 4.55)
         float segGap = 5f;      // slit between paddles — too thin for the ball
         float step = paddleArc + segGap;
         int count = Mathf.Max(1, Mathf.FloorToInt((covered + segGap) / step));

@@ -2040,7 +2040,7 @@ MonoBehaviour:
   levelDuration: 30
   maxLevel: 5
   baseSpeed: 9
-  speedPerLevel: 1.75
+  speedPerLevel: 2
   tube: {fileID: 987331814}
 --- !u!4 &675124307
 Transform:
@@ -2250,10 +2250,10 @@ MonoBehaviour:
   introDuration: 20
   introPaddleWidth: 4
   gapBase: 80
-  gapPerLevel: 13
-  gapMin: 38
+  gapPerLevel: 15
+  gapMin: 24
   barrierChanceBase: 0.35
-  barrierChancePerLevel: 0.08
+  barrierChancePerLevel: 0.1
   paddleRadius: 4.55
 --- !u!4 &800452881
 Transform:
