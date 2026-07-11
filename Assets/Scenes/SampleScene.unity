@@ -4477,7 +4477,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>A / D</b> or <b>arrow keys</b>  \u2014  roll around the tube\n<b>P</b>
+  m_text: "<b>A / D</b> or <b>arrow keys</b>  \u2014  roll around the tube\n\n<b>P</b>
     or <b>ESC</b>  \u2014  pause\n\ndodge the paddles. thread the gap.\n\n<color=#33CCFF><b>BLUE
     ORB</b></color> +1 heart\n\n<color=#FFD84D><b>GOLD CUBE</b></color> 3s immunity\n\nsurvive
     5 levels. reach the portal. <color=#33FF66><b>break free.</b></color>"
